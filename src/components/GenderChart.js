@@ -11,7 +11,6 @@ let getData = () => {
         let count = 0;
 
         data.forEach(element => {
-            console.log(element['Gender'])
             if(element['Gender'] === label) {
                 count += 1
             }
