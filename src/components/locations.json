@@ -17,8 +17,11 @@
     "Taupo":{"lat": -38.685692, "lng": 176.070206},
     "Otago":{"lat": -45.8741608, "lng": 170.5036163},
     "Wairarapa":{"lat": -40.95972, "lng": 175.6575},
-    "Hawkes Bay":{"lat": -39.4167, "lng": 176.8167},
+    "Hawke's Bay":{"lat": -39.4167, "lng": 176.8167},
     "Southern DHB":{"lat": -45.7000, "lng": 168.1000},
     "Rotorua":{"lat":  -38.1387 , "lng": 176.2452},
-    "Invercargill":{"lat": -46.4250, "lng": 168.3100}
+    "Invercargill":{"lat": -46.4250, "lng": 168.3100},
+    "New Plymouth":{"lat": -39.055626, "lng": 174.075226},
+    "Christchurch":{"lat": -43.525650, "lng": 172.639847},
+    "Queenstown":{"lat": -45.031162, "lng": 168.662643}
 }

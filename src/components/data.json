@@ -1,10 +1,290 @@
 [
   {
+    "Case": 142,
+    "Location": "Auckland",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 141,
+    "Location": "New Plymouth",
+    "Age": "60s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 140,
+    "Location": "Wairarapa",
+    "Age": "20s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 139,
+    "Location": "Wellington",
+    "Age": 64,
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 138,
+    "Location": "Marlborough",
+    "Age": "60s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 137,
+    "Location": "Marlborough",
+    "Age": "30s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 136,
+    "Location": "Auckland",
+    "Age": "60s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 135,
+    "Location": "Wellington",
+    "Age": "70s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 134,
+    "Location": "Wellington",
+    "Age": "70s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 133,
+    "Location": "Wellington",
+    "Age": "50s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 132,
+    "Location": "Hawke's Bay",
+    "Age": "70s",
+    "Gender": "F",
+    "Travel details": "Barcelona via Dubai to Auckland, arrived on 18 March, flight EK448, Auckland to Napier on 19 March – flight NZ5021"
+  },
+  {
+    "Case": 131,
+    "Location": "Hawke's Bay",
+    "Age": "70s",
+    "Gender": "M",
+    "Travel details": "Barcelona via Dubai to Auckland, arrived on 18 March, flight EK448, Auckland to Napier on 19 March – flight NZ5021"
+  },
+  {
+    "Case": 130,
+    "Location": "Wellington",
+    "Age": "50s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 129,
+    "Location": "Wellington",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 128,
+    "Location": "Wellington",
+    "Age": "30s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 127,
+    "Location": "Wellington",
+    "Age": "50s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 126,
+    "Location": "Wellington",
+    "Age": "60s",
+    "Gender": "M",
+    "Travel details": "Travelled from USA to New Zealand, arrived on 19 March, flight details to come"
+  },
+  {
+    "Case": 125,
+    "Location": "Wellington",
+    "Age": "60s",
+    "Gender": "F",
+    "Travel details": "Travelled from USA to New Zealand, arrived on 19 March, flight details to come"
+  },
+  {
+    "Case": 124,
+    "Location": "Wellington",
+    "Age": "50s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 123,
+    "Location": "Nelson",
+    "Age": "80s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 122,
+    "Location": "Auckland",
+    "Age": "20s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 121,
+    "Location": "Dunedin",
+    "Age": "30s",
+    "Gender": "M",
+    "Travel details": "Dubai to Auckland, arrived on 19 March – flight EK447, Auckland to Dunedin on 19 March – flight JQ285"
+  },
+  {
+    "Case": 120,
+    "Location": "Dunedin",
+    "Age": "60s",
+    "Gender": "M",
+    "Travel details": "London to LA on 14 March, then LA to Auckland on flight NZ5, Auckland to Dunedin on 16 March – flight NZ671"
+  },
+  {
+    "Case": 119,
+    "Location": "Waikato",
+    "Age": "50s",
+    "Gender": "M",
+    "Travel details": "No international travel history – exposed at World Herefords Conference in Queenstown"
+  },
+  {
+    "Case": 118,
+    "Location": "Auckland",
+    "Age": "Teens",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 117,
+    "Location": "Auckland",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "Arrived in Auckland on 18 March, flight details to come"
+  },
+  {
+    "Case": 116,
+    "Location": "Auckland",
+    "Age": "20s",
+    "Gender": "F",
+    "Travel details": "Arrived in Auckland on 20 March, flight details to come"
+  },
+  {
+    "Case": 115,
+    "Location": "Auckland",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 114,
+    "Location": "Auckland",
+    "Age": "Teens",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 113,
+    "Location": "Auckland",
+    "Age": "40s",
+    "Gender": "M",
+    "Travel details": "Arrived in Auckland 18 March, flight details to come"
+  },
+  {
+    "Case": 112,
+    "Location": "Auckland",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 111,
+    "Location": "Waikato",
+    "Age": "60s",
+    "Gender": "F",
+    "Travel details": "Departed on 16 March – flight EK0448"
+  },
+  {
+    "Case": 110,
+    "Location": "Christchurch",
+    "Age": "60s",
+    "Gender": "M",
+    "Travel details": "Relative of a confirmed case"
+  },
+  {
+    "Case": 109,
+    "Location": "Christchurch",
+    "Age": "60s",
+    "Gender": "F",
+    "Travel details": "Relative of a confirmed case"
+  },
+  {
+    "Case": 108,
+    "Location": "Queenstown",
+    "Age": "Teens",
+    "Gender": "M",
+    "Travel details": "Dubai to Auckland on 18 March – flight EK448, Auckland to Queenstown on 19 March – flight EK7563"
+  },
+  {
+    "Case": 107,
+    "Location": "Dunedin",
+    "Age": "30s",
+    "Gender": "F",
+    "Travel details": "No international travel history – exposed at World Herefords Conference in Queenstown"
+  },
+  {
+    "Case": 106,
+    "Location": "Otago",
+    "Age": "50s",
+    "Gender": "F",
+    "Travel details": "No international travel history – exposed at World Herefords Conference in Queenstown."
+  },
+  {
+    "Case": 105,
+    "Location": "Taupo",
+    "Age": "20s",
+    "Gender": "M",
+    "Travel details": "Departed Switzerland 16 March, flew via Abu Dhabi to New Zealand – flight EY0052"
+  },
+  {
+    "Case": 104,
+    "Location": "Auckland",
+    "Age": "20s",
+    "Gender": "M",
+    "Travel details": "Details to come"
+  },
+  {
+    "Case": 103,
+    "Location": "Auckland",
+    "Age": "40s",
+    "Gender": "M",
+    "Travel details": "USA to Auckland, arrived 18 March, flight details to come"
+  },
+  {
     "Case": 102,
     "Location": "Auckland",
     "Age": "50s",
     "Gender": "M",
-    "Travel details": "Details to come"
+    "Travel details": "USA to Auckland, arrived 8 March, flight details to come"
   },
   {
     "Case": 101,
@@ -151,7 +431,7 @@
     "Location": "Auckland",
     "Age": "60s",
     "Gender": "M",
-    "Travel details": "Dubai to Auckland on 18 March – flight EK0448"
+    "Travel details": "Dubai to Auckland on 18 March – flight EK448"
   },
   {
     "Case": 80,
@@ -200,7 +480,7 @@
     "Location": "Auckland",
     "Age": "20s",
     "Gender": "M",
-    "Travel details": "Travel to USA – flight details to come"
+    "Travel details": "Sydney to Auckland, arriving 18 March – flight QF143"
   },
   {
     "Case": 73,
@@ -228,7 +508,7 @@
     "Location": "Auckland",
     "Age": "50s",
     "Gender": "F",
-    "Travel details": "Details to come"
+    "Travel details": "Under investigation"
   },
   {
     "Case": 69,
@@ -354,7 +634,7 @@
     "Location": "Auckland",
     "Age": "50s",
     "Gender": "F",
-    "Travel details": "Contact with probable case."
+    "Travel details": "Contact with probable case"
   },
   {
     "Case": 51,
@@ -480,35 +760,35 @@
     "Location": "Waikato",
     "Age": "60s",
     "Gender": "Female",
-    "Travel details": "Dubai to Auckland on Monday 16 March – flight EK0450"
+    "Travel details": "Dubai to Auckland on 16 March – flight EK0450"
   },
   {
     "Case": 33,
     "Location": "Waikato",
     "Age": "70s",
     "Gender": "Female",
-    "Travel details": "Dubai to Auckland on Monday 16 March – flight EK0450"
+    "Travel details": "Dubai to Auckland on 16 March – flight EK0450"
   },
   {
     "Case": 32,
-    "Location": "Hawkes Bay",
+    "Location": "Hawke's Bay",
     "Age": "30s",
     "Gender": "Male",
-    "Travel details": "Doha to Auckland on Monday 16 March – flight QR920 Auckland to Napier on Tuesday 17 March – flight NZ5021"
+    "Travel details": "Doha to Auckland on 16 March – flight QR920 Auckland to Napier on 17 March – flight NZ5021"
   },
   {
     "Case": 31,
     "Location": "Wellington",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Melbourne to Wellington on Saturday 14 March – flight SQ247"
+    "Travel details": "Melbourne to Wellington on 14 March – flight SQ247"
   },
   {
     "Case": 30,
     "Location": "Canterbury",
     "Age": "50s",
     "Gender": "Male",
-    "Travel details": "Los Angeles to Auckland on Saturday 14 March – flight AA83\n \t\t\tAuckland to Christchurch on Sunday 15 March – flight NZ535"
+    "Travel details": "Los Angeles to Auckland on 14 March – flight AA83\n \t\t\tAuckland to Christchurch on 15 March – flight NZ535"
   },
   {
     "Case": 29,
@@ -522,98 +802,98 @@
     "Location": "Southern DHB",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "Sydney to Christchurch on Friday 13 March – flight EK402"
+    "Travel details": "Sydney to Christchurch on 13 March – flight EK402"
   },
   {
     "Case": 27,
     "Location": "Southern DHB",
     "Age": "30s",
     "Gender": "Female",
-    "Travel details": "London to Auckland on Tuesday 17 March – flight NZ1\n \t\t\tAuckland to Christchurch on Tuesday 17 March – flight NZ525 Christchurch to Dunedin on Tuesday 17 March – flight NZ5749"
+    "Travel details": "London to Auckland on 17 March – flight NZ1\n \t\t\tAuckland to Christchurch on 17 March – flight NZ525 Christchurch to Dunedin on 17 March – flight NZ5749"
   },
   {
     "Case": 26,
     "Location": "Auckland",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Melbourne to Auckland on Sunday 15 March – flight QF153"
+    "Travel details": "Melbourne to Auckland on 15 March – flight QF153"
   },
   {
     "Case": 25,
     "Location": "Auckland",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "Los Angeles to Auckland on Friday 13 March – flight NZ05"
+    "Travel details": "Los Angeles to Auckland on 13 March – flight NZ05"
   },
   {
     "Case": 24,
     "Location": "Rotorua",
     "Age": "50s",
     "Gender": "Male",
-    "Travel details": "Singapore to Auckland on Friday 13 March - flight SQ285"
+    "Travel details": "Singapore to Auckland on 13 March – flight SQ285"
   },
   {
     "Case": 23,
     "Location": "Northland",
     "Age": "20s",
     "Gender": "Male",
-    "Travel details": "Sydney to Auckland on Monday 16 March – flight VA0141"
+    "Travel details": "Sydney to Auckland on 16 March – flight VA0141"
   },
   {
     "Case": 22,
     "Location": "Taranaki",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Cairo to Frankfurt (Lufthansa LH581 on Saturday 7 March) to Vancouver to Auckland on Sunday 15 March – flight NZ23 Auckland to New Plymouth on Sunday 15 March – flight NZ8035"
+    "Travel details": "Vancouver to Auckland, arrived on 15 March – flight NZ23, Auckland to New Plymouth on 15 March – flight NZ8035"
   },
   {
     "Case": 21,
     "Location": "Taranaki",
     "Age": "40s",
     "Gender": "Female",
-    "Travel details": "Dubai to Auckland on Monday 9 March - flight EK448 Auckland to New Plymouth on Monday 9 March - flight NZ8041"
+    "Travel details": "Dubai to Auckland, arrived on 9 March – flight EK448, Auckland to New Plymouth on 9 March – flight NZ8041"
   },
   {
     "Case": 20,
     "Location": "Waikato",
     "Age": "70s",
     "Gender": "Male",
-    "Travel details": "Singapore to Auckland on Sunday 15 March – flight SQ285"
+    "Travel details": "Singapore to Auckland on 15 March – flight SQ285"
   },
   {
     "Case": 19,
     "Location": "Waikato",
     "Age": "20s",
     "Gender": "Female",
-    "Travel details": "Sydney to Auckland on Sunday 8 March – flight NZ112"
+    "Travel details": "Sydney to Auckland, arrived on 8 March – flight NZ112"
   },
   {
     "Case": 18,
     "Location": "Canterbury",
     "Age": "40s",
     "Gender": "Female",
-    "Travel details": "Singapore to Christchurch on Monday 16 March – flight SQ297"
+    "Travel details": "Singapore to Christchurch, arrived on 16 March – flight SQ297"
   },
   {
     "Case": 17,
     "Location": "Invercargill",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Travelled Australia to New Zealand on 10 March, flight details to come"
+    "Travel details": "Australia to New Zealand, arrived on 10 March, flight details to come"
   },
   {
     "Case": 16,
     "Location": "Auckland",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "Travelling from Canada (on Thursday 12 March) - flight details to come."
+    "Travel details": "Canada to New Zealand, arrived on 12 March – flight details to come"
   },
   {
     "Case": 15,
     "Location": "Auckland",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "San Francisco to Auckland on Friday 13 March – flight NZ007"
+    "Travel details": "San Francisco to Auckland, arrived on 13 March – flight NZ7"
   },
   {
     "Case": 14,
@@ -627,21 +907,21 @@
     "Location": "Auckland",
     "Age": "50s",
     "Gender": "Male",
-    "Travel details": "Dubai to Auckland on 14 March – flight EK448"
+    "Travel details": "Dubai to Auckland, arrived on 14 March – flight EK448"
   },
   {
     "Case": 12,
     "Location": "Dunedin",
     "Age": "Teens",
     "Gender": "Male",
-    "Travel details": "Associated with travel of case 11."
+    "Travel details": "Related to case 11."
   },
   {
     "Case": 11,
     "Location": "Dunedin",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Singapore to Auckland on Saturday 7 March - flight NZ283 Auckland to Dunedin on Sunday 8 March - flight NZ675"
+    "Travel details": "Singapore to Auckland on 7 March – flight NZ283, Auckland to Dunedin on 8 March – flight NZ675"
   },
   {
     "Case": 10,
@@ -662,55 +942,55 @@
     "Location": "Wellington",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "Brisbane to Wellington on Saturday 14 March – flight NZ828"
+    "Travel details": "Brisbane to Wellington, arrived on 14 March – flight NZ828"
   },
   {
     "Case": 7,
     "Location": "Dunedin",
     "Age": "30s",
     "Gender": "Female",
-    "Travel details": "Denmark to Doha to Auckland on Tuesday 10 March - flight QR920) Auckland to Christchurch on Tuesday 10 March - flight JQ225"
+    "Travel details": "Doha to Auckland on 10 March – flight QR920, Auckland to Christchurch on 10 March – flight JQ225"
   },
   {
     "Case": 6,
     "Location": "Auckland",
     "Age": "60s",
     "Gender": "Male",
-    "Travel details": "Houston to Auckland on Friday 6 March – flight NZ029"
+    "Travel details": "Houston to Auckland on 6 March – flight NZ029"
   },
   {
     "Case": 5,
     "Location": "Auckland",
     "Age": "40s",
     "Gender": "Female",
-    "Travel details": "Associated with travel - Doha to Auckland on Sunday 23 February – flight QR0920"
+    "Travel details": "Doha to Auckland on 23 February – flight QR0920"
   },
   {
     "Case": 4,
     "Location": "Auckland",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Singapore to Auckland on Tuesday 25 February – flight NZ283"
+    "Travel details": "Singapore to Auckland on 25 February – flight NZ283"
   },
   {
     "Case": 3,
     "Location": "Auckland",
     "Age": "40s",
     "Gender": "Male",
-    "Travel details": "Associated with travel - Doha to Auckland on Sunday 23 February – flight QR0920"
+    "Travel details": "Doha to Auckland, arrived on 23 February – flight QR0920"
   },
   {
     "Case": 2,
     "Location": "Auckland",
     "Age": "30s",
     "Gender": "Female",
-    "Travel details": "Singapore to Auckland on Tuesday 25 February - flight NZ283"
+    "Travel details": "Singapore to Auckland on 25 February – flight NZ283"
   },
   {
     "Case": 1,
     "Location": "Auckland",
     "Age": "60s",
-    "Gender": "",
-    "Travel details": "Iran to Bali to Auckland on Wednesday 26 February – flight EK450"
+    "Gender": "Female",
+    "Travel details": "Iran to Bali to Auckland, arrived on 26 February – flight EK450"
   }
 ]
