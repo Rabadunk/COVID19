@@ -39,8 +39,8 @@ class GenderChart extends Component {
                     label: 'People',
                     data: getData(),
                       backgroundColor:[
-                        'rgba(255, 206, 86, 0.6)',
-                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 206, 86, 1)',
                       ] 
                 }]
             }
