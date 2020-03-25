@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Bar} from 'react-chartjs-2';
-import data from './data.json'
+import data from '../data/data.json'
 
 const labelsArray = ['Child', 'Teens', '20s', '30s', '40s', '50s', '60s', '70s', '80s', '90s'];
 

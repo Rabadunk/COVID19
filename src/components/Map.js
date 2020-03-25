@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import axios from 'axios';
-import data from './data.json'
+import data from '../data/data.json'
 import locations from './locations.json'
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './components/Title'
 import AgeChart from './components/AgeChart';
 import GenderChart from './components/GenderChart';
-import Map from './components/Map'
+import NewMap from './components/NewMap'
 import './App.css';
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <div className="App">
 
       <Title />
+      <NewMap />
 
       <div className="graph">
-        <Map />
         <AgeChart/>
         <GenderChart/>
       </div>
