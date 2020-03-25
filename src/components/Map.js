@@ -37,8 +37,6 @@ export default function Map() {
         })
     }
 
-    console.log(mapData[0].data[1].location.lat);
-
     return (
     // Set a height on the map so it will display
         <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
