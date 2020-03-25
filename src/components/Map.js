@@ -2,15 +2,16 @@ import React, {useState} from "react";
 import ReactMapGL, { Marker } from "react-map-gl"
 import data from '../data/data.json'
 import locations from '../data/locations.json'
+import { Button } from "react-bootstrap";
 
 
 export default function Map() {
     const [viewport, setViewport] = useState({
-        latitude: -41,
-        longitude: 535,
+        latitude: -36.848461,
+        longitude: 174.763336,
         width: '100%',
         height: '100vh',
-        zoom: 4
+        zoom: 8
     });
 
     let mapJuice = {
@@ -47,9 +48,8 @@ export default function Map() {
             {
                 mapData.map(place => (
                     <Marker key={place.data[0]} latitude={place.data[1].location.lat} longitude={place.data[1].location.lng}>
-                        <button style={{backgroundColor:'white'}}>
-                            {place.data[1].count}
-                        </button>
+
+                        <Button variant="dark" className="Case-Marker">{place.data[1].count}</Button>
                     </Marker>
                 ))
             }

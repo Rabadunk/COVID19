@@ -17,7 +17,6 @@
   float:right;
 }
 
-.graph {
-  margin: 0 auto;
-  width: 80%;
+.Case-Marker {
+  border-radius: 50%;
 }
