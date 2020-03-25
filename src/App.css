@@ -6,6 +6,17 @@
   margin: 10px;
 }
 
+.Info {
+  float: left;
+  width: 30%;
+
+}
+
+.Map {
+  width: 70%;
+  float:right;
+}
+
 .graph {
   margin: 0 auto;
   width: 80%;
