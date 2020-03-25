@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoCard from './InfoCard'
-import data from '../data/data.json'
+import data from '../../data/data.json'
 
 
 let locations = []

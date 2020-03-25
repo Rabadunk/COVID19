@@ -1,0 +1,28 @@
+.Location-Card {
+    height: 40px;
+    border-radius: 0px;
+    padding: 5px;
+    text-align: left;
+}
+
+.Location-Info {
+    background-color: #fbecc0;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 250px;
+}
+
+.Piece-Of-Info {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    
+}
+
+
+.Button-Wrappers{
+    height: 20px;
+    width: 60px;
+    padding: 1px;
+    font-size: 60%;
+    margin: 0 10px 0 10px;
+}
