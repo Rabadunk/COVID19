@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './components/Title'
 import Map from './components/Map'
+import Info from './components/Info'
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       </div>
       <div className="Info">
         <Title />
+        <Info />
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .Title {
@@ -9,7 +11,14 @@
 .Info {
   float: left;
   width: 30%;
+  height: 100vh;
 
+}
+
+.Info-Cards {
+  height: 80% ;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .Map {
