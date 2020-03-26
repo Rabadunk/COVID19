@@ -3,6 +3,14 @@
     border-radius: 0px;
     padding: 5px;
     text-align: left;
+    border:none;
+    background-color: snow;
+    
+}
+
+.Location-Card:hover {
+    cursor: pointer;
+    background-color: #fbecc0;
 }
 
 .Location-Info {
