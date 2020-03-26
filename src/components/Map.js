@@ -7,11 +7,11 @@ import { Button } from "react-bootstrap";
 
 export default function Map() {
     const [viewport, setViewport] = useState({
-        latitude: -36.848461,
-        longitude: 174.763336,
+        latitude: -41.51128245580759,
+        longitude: 172.72407079826075,
         width: '100%',
         height: '100vh',
-        zoom: 8
+        zoom: 4.418
     });
 
     let mapJuice = {
@@ -49,6 +49,10 @@ export default function Map() {
                         <Button variant="warning" className="Case-Marker">{place.data[1].count}</Button>
                     </Marker>
                 ))
+            }
+
+            {
+                console.log(viewport.zoom, viewport.latitude, viewport.longitude)
             }
 
         </ReactMapGL>
