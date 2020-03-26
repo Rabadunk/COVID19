@@ -5,7 +5,7 @@ function Title () {
   return (
     <div className='Title'>
       <h1>
-        COVID-19 <FiAlertTriangle />
+        <FiAlertTriangle /> COVID-19 <FiAlertTriangle />
       </h1>
     </div>
   )
