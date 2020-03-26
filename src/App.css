@@ -2,18 +2,19 @@
   text-align: center;
   max-height: 100vh;
   min-height: 100vh;
+  background-color: #fddb53;
 }
 
 .Title {
-  margin: 10px;
+  padding: 10px;
+  font-weight: 100;
+  background-color: #fddb53;
 }
 
 .Info {
   float: left;
   width: 30%;
   height: 100vh;
-  border-right: 1px solid #fddb53;
-
 }
 
 .Info-Cards {

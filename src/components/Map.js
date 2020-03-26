@@ -47,7 +47,7 @@ export default function Map() {
                 mapData.map(place => (
                     <Marker key={place.data[0]} latitude={place.data[1].location.lat} longitude={place.data[1].location.lng}>
 
-                        <Button variant="dark" className="Case-Marker">{place.data[1].count}</Button>
+                        <Button variant="warning" className="Case-Marker">{place.data[1].count}</Button>
                     </Marker>
                 ))
             }
