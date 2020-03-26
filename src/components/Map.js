@@ -67,7 +67,7 @@ export default function Map() {
         points,
         zoom: viewport.zoom,
         bounds,
-        options: { radius: 40 , maxZoom: 12}
+        options: { radius: 60 , maxZoom: 12}
     })
 
     console.log(clusters);
@@ -76,7 +76,8 @@ export default function Map() {
     // Set a height on the map so it will display
         <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
         onViewportChange={ viewport => { setViewport(viewport)}}
-        maxZoom={10}
+        maxZoom={8}
+        minZoom={4}
         ref={mapRef}>
 
             <Button className="Zoom-Out" onClick={ () => {

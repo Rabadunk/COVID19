@@ -39,6 +39,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  background-color: rgba(253, 219, 83, 0.5);
 }
 
 .Zoom-Out {
