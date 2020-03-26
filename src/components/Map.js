@@ -40,8 +40,7 @@ export default function Map() {
     return (
     // Set a height on the map so it will display
         <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
-        onViewportChange={ viewport => { setViewport(viewport)}}
-        mapStyle={process.env.REACT_APP_MAP_STYLE}>
+        onViewportChange={ viewport => { setViewport(viewport)}}>
 
             {
                 mapData.map(place => (
