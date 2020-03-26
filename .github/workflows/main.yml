@@ -25,6 +25,6 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REACT_APP_MAP_KEY: ${{ secrets.REACT_APP_MAP_KEY }}
-        REACT_APP_MAP_STYLE: ${{ secrets.REACT_APP_MAP_STYLE }}
+        REACT_APP_MAP_STYLE: ${{ secrets.REACT_APP_MAP_STYL }}
         BRANCH: gh-pages
         FOLDER: build
