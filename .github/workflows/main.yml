@@ -19,16 +19,12 @@ jobs:
       run: |
         npm install
         npm run-script build
-      env:
-        REACT_APP_MAP_KEY: ${{ secrets.REACT_APP_MAP_KEY }}
-        REACT_APP_MAP_STYLE: ${{ secrets.REACT_APP_MAP_STYLE }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
-      env:
-        REACT_APP_MAP_KEY: ${{ secrets.REACT_APP_MAP_KEY }}
-        REACT_APP_MAP_STYLE: ${{ secrets.REACT_APP_MAP_STYLE }}
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REACT_APP_MAP_KEY: ${{ secrets.REACT_APP_MAP_KEY }}
+        REACT_APP_MAP_STYLE: ${{ secrets.REACT_APP_MAP_STYLE }}
         BRANCH: gh-pages
         FOLDER: build
