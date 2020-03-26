@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/COVID19/static/css/main.4810e664.chunk.css",
-    "main.js": "/COVID19/static/js/main.5079f88a.chunk.js",
-    "main.js.map": "/COVID19/static/js/main.5079f88a.chunk.js.map",
+    "main.js": "/COVID19/static/js/main.7345ae8d.chunk.js",
+    "main.js.map": "/COVID19/static/js/main.7345ae8d.chunk.js.map",
     "runtime-main.js": "/COVID19/static/js/runtime-main.b6cf2ffe.js",
     "runtime-main.js.map": "/COVID19/static/js/runtime-main.b6cf2ffe.js.map",
     "static/css/2.de424728.chunk.css": "/COVID19/static/css/2.de424728.chunk.css",
-    "static/js/2.fce9fa01.chunk.js": "/COVID19/static/js/2.fce9fa01.chunk.js",
-    "static/js/2.fce9fa01.chunk.js.map": "/COVID19/static/js/2.fce9fa01.chunk.js.map",
+    "static/js/2.cee32686.chunk.js": "/COVID19/static/js/2.cee32686.chunk.js",
+    "static/js/2.cee32686.chunk.js.map": "/COVID19/static/js/2.cee32686.chunk.js.map",
     "index.html": "/COVID19/index.html",
-    "precache-manifest.61fc02b9b59ec47bc34c91ab9d0287fb.js": "/COVID19/precache-manifest.61fc02b9b59ec47bc34c91ab9d0287fb.js",
+    "precache-manifest.4430337e05970eb2c88102761781e493.js": "/COVID19/precache-manifest.4430337e05970eb2c88102761781e493.js",
     "service-worker.js": "/COVID19/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/COVID19/static/css/2.de424728.chunk.css.map",
     "static/css/main.4810e664.chunk.css.map": "/COVID19/static/css/main.4810e664.chunk.css.map",
-    "static/js/2.fce9fa01.chunk.js.LICENSE.txt": "/COVID19/static/js/2.fce9fa01.chunk.js.LICENSE.txt",
+    "static/js/2.cee32686.chunk.js.LICENSE.txt": "/COVID19/static/js/2.cee32686.chunk.js.LICENSE.txt",
     "static/media/Title.png": "/COVID19/static/media/Title.23336c2c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6cf2ffe.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.fce9fa01.chunk.js",
+    "static/js/2.cee32686.chunk.js",
     "static/css/main.4810e664.chunk.css",
-    "static/js/main.5079f88a.chunk.js"
+    "static/js/main.7345ae8d.chunk.js"
   ]
 }
