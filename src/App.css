@@ -3,6 +3,7 @@
   max-height: 100vh;
   min-height: 100vh;
   background-color: #fddb53;
+  overflow: hidden;
 }
 
 .Title {
@@ -30,6 +31,7 @@
 
 .Map {
   width: 70%;
+  height: 100vh;
   float:right;
 }
 
