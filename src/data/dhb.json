@@ -1,0 +1,162 @@
+[
+    {
+      "DHB": "Auckland",
+      "Confirmed cases": 43,
+      "Probable cases": 2,
+      "Total cases": 45,
+      "Latitude":-36.86667,
+      "Longitude":174.76667
+    },
+    {
+      "DHB": "Bay of Plenty",
+      "Confirmed cases": 3,
+      "Probable cases": 0,
+      "Total cases": 3,
+      "Latitude":-38.1,
+      "Longitude":176.7
+    },
+    {
+      "DHB": "Canterbury",
+      "Confirmed cases": 17,
+      "Probable cases": 1,
+      "Total cases": 18,
+      "Latitude":-43.53333,
+      "Longitude":172.63333
+    },
+    {
+      "DHB": "Capital and Coast",
+      "Confirmed cases": 35,
+      "Probable cases": 4,
+      "Total cases": 39,
+      "Latitude":-41.28664,
+      "Longitude":174.77557
+    },
+    {
+      "DHB": "Counties Manukau",
+      "Confirmed cases": 23,
+      "Probable cases": 2,
+      "Total cases": 25,
+      "Latitude":-36.99282,
+      "Longitude":174.87986
+    },
+    {
+      "DHB": "Hawke's Bay",
+      "Confirmed cases": 3,
+      "Probable cases": 3,
+      "Total cases": 6,
+      "Latitude":-39.48333,
+      "Longitude":176.91667
+    },
+    {
+      "DHB": "Hutt Valley",
+      "Confirmed cases": 5,
+      "Probable cases": 1,
+      "Total cases": 6,
+      "Latitude":-41.21667,
+      "Longitude":174.91667
+    },
+    {
+      "DHB": "Lakes",
+      "Confirmed cases": 6,
+      "Probable cases": 0,
+      "Total cases": 6,
+      "Latitude":-38.68333,
+      "Longitude":176.08333
+    },
+    {
+      "DHB": "MidCentral",
+      "Confirmed cases": 5,
+      "Probable cases": 1,
+      "Total cases": 6,
+      "Latitude":-40.95972, 
+      "Longitude":175.6575
+    },
+    {
+      "DHB": "Nelson-Marlborough",
+      "Confirmed cases": 16,
+      "Probable cases": 1,
+      "Total cases": 17,
+      "Latitude":-41.27078,
+      "Longitude":173.28404
+    },
+    {
+      "DHB": "Northland",
+      "Confirmed cases": 3,
+      "Probable cases": 0,
+      "Total cases": 3,
+      "Latitude":-35.73167, 
+      "Longitude":174.32391
+    },
+    {
+      "DHB": "South Canterbury",
+      "Confirmed cases": 2,
+      "Probable cases": 0,
+      "Total cases": 2,
+      "Latitude":-44.4,
+      "Longitude":171.25
+    },
+    {
+      "DHB": "Southern",
+      "Confirmed cases": 30,
+      "Probable cases": 1,
+      "Total cases": 31,
+      "Latitude":-45.03023,
+      "Longitude":168.66271
+    },
+    {
+      "DHB": "Tairawhiti",
+      "Confirmed cases": 0,
+      "Probable cases": 0,
+      "Total cases": 0,
+      "Latitude":-38.65333,
+      "Longitude":178.00417
+    },
+    {
+      "DHB": "Taranaki",
+      "Confirmed cases": 5,
+      "Probable cases": 1,
+      "Total cases": 6,
+      "Latitude":-39.59167,
+      "Longitude":174.28333
+    },
+    {
+      "DHB": "Waikato",
+      "Confirmed cases": 31,
+      "Probable cases": 3,
+      "Total cases": 34,
+      "Latitude":-37.78333,
+      "Longitude":175.28333
+    },
+    {
+      "DHB": "Wairarapa",
+      "Confirmed cases": 5,
+      "Probable cases": 0,
+      "Total cases": 5,
+      "Latitude":-41.2167,
+      "Longitude":175.2500
+    },
+    {
+      "DHB": "Waitemata",
+      "Confirmed cases": 29,
+      "Probable cases": 1,
+      "Total cases": 30,
+      "Latitude":-36.817603,
+      "Longitude":174.718179
+    },
+    {
+      "DHB": "West Coast",
+      "Confirmed cases": 1,
+      "Probable cases": 0,
+      "Total cases": 1,
+      "Latitude":-42.46667, 
+      "Longitude":171.2
+    },
+    {
+      "DHB": "Whanganui",
+      "Confirmed cases": 0,
+      "Probable cases": 0,
+      "Total cases": 0,
+      "Latitude":-39.937771,
+      "Longitude":175.03280
+    }
+  ]

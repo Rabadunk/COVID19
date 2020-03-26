@@ -1,61 +1,42 @@
 import React, {useState, useRef} from "react";
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
-import userSupercluster from "use-supercluster";
 
-
-import data from '../data/data.json'
-import locations from '../data/locations.json'
 
 import { MdZoomOutMap } from "react-icons/md";
 import { Button } from "react-bootstrap";
 import useSupercluster from "use-supercluster";
 
 
-export default function Map() {
-    const [viewport, setViewport] = useState({
+export default function Map({locations}) {
+    const defaultView = {
         latitude: -41.51128245580759,
         longitude: 172.72407079826075,
         width: '100%',
-        height: '100%',
-        zoom: 4.418
-    });
+        height: '100vh',
+        zoom: 4.418,
+        transitionInterpolator: new FlyToInterpolator({
+            speed: 1
+        }),
+        transitionDuration: "auto"     
+    }
+
+    const [viewport, setViewport] = useState(defaultView);
 
     const mapRef = useRef()
 
-    // Extracting local data for map
-    let mapJuice = {
-    }
-
-    data.forEach(async (element) => {
-    
-        if(element['Location'] in mapJuice) {
-            mapJuice[element['Location']].count += 1;
-        } else {
-            mapJuice[element['Location']] = {count: 1, location: locations[element['Location']]};
-        }
-    
-    });
-
-    let mapData = []
-
-    for(let place in mapJuice) {
-        mapData.push({
-            data: [place, mapJuice[place]]
-        })
-    }
 
     // Clustering
     // Format for clusters
-    const points = mapData.map( place => ({
-        type: "Feater",
+    const points = locations.map( place => ({
+        type: "Feature",
         properties: {
             cluser: false,
-            placeId: place.data[0],
-            count: place.data[1].count
+            placeId: place.DHB,
+            count: place['Total cases']
         },
         geometry: {
             type: "Point",
-            coordinates: [place.data[1].location.lng, place.data[1].location.lat]
+            coordinates: [place.Longitude, place.Latitude]
         }
     }));
 
@@ -67,31 +48,33 @@ export default function Map() {
         points,
         zoom: viewport.zoom,
         bounds,
-        options: { radius: 60 , maxZoom: 12}
+        options: { radius: 50, maxZoom: 12}
     })
 
-    console.log(clusters);
+    // Method to get sum of clusters
+    const getClusterSum = (cluster) => {
+
+        let sum = 0;
+        
+        supercluster.getLeaves(cluster.id).forEach(point => {
+
+            sum += point.properties.count;
+        })
+
+        return sum;
+
+    }
 
     return (
     // Set a height on the map so it will display
         <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
         onViewportChange={ viewport => { setViewport(viewport)}}
-        maxZoom={8}
+        maxZoom={12}
         minZoom={4}
         ref={mapRef}>
 
             <Button className="Zoom-Out" onClick={ () => {
-                setViewport({
-                    latitude: -41.51128245580759,
-                    longitude: 172.72407079826075,
-                    width: '100%',
-                    height: '100vh',
-                    zoom: 4.418,
-                    transitionInterpolator: new FlyToInterpolator({
-                        speed: 1
-                    }),
-                    transitionDuration: "auto"     
-                })}
+                setViewport(defaultView)}
             }>
                 <MdZoomOutMap/>
             
@@ -99,18 +82,21 @@ export default function Map() {
 
             {
                 clusters.map(cluster => {
-
+                    
                     const [longitude, latitude] = cluster.geometry.coordinates;
                     const {cluster: isCluster, point_count: pointCount} = cluster.properties;
 
                     if(isCluster) {
 
+                        let sum = getClusterSum(cluster);
+                        let dimension = 50 + 5 * (sum / points.length)
+
                         return(
                             <Marker key={cluster.id} latitude={latitude} longitude={longitude}>
                                 <Button variant="warning" className="Case-Marker" 
-                                style={{width: `${50 + 20*(pointCount / points.length)}px`, height: `${50 + 20*(pointCount / points.length)}px`}}
+                                style={{width: `${dimension}px`, height: `${dimension}px`}}
                                 onClick={ () => {
-                                    const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 12);
+                                    const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 9);
                                     setViewport({
                                         ...viewport,
                                         latitude,
@@ -121,21 +107,23 @@ export default function Map() {
                                         }),
                                         transitionDuration: "auto"
                                     })
-                                }}>{pointCount}</Button>
+                                }}>{sum}</Button>
                             </Marker>
                         );
                     }
 
+                    let dimension = 50 + 5 * (cluster.properties.count / points.length)
+
                     return(
                         <Marker key={cluster.properties.placeId} latitude={latitude} longitude={longitude}>
                             <Button variant="warning" className="Case-Marker"
-                                    style={{width: `${50 + 20  * (cluster.properties.count / points.length)}px`, height: `${50 + 20* (cluster.properties.count / points.length)}px`}}
+                                    style={{width: `${dimension}px`, height: `${dimension}px`}}
                                     onClick={ () => {
                                         setViewport({
                                             ...viewport,
                                             latitude,
                                             longitude,
-                                            zoom: 12,
+                                            zoom: 9,
                                             transitionInterpolator: new FlyToInterpolator({
                                                 speed: 1
                                             }),
@@ -145,10 +133,6 @@ export default function Map() {
                         </Marker>
                     )
                 })
-            }
-
-            {
-                console.log(viewport.zoom, viewport.latitude, viewport.longitude)
             }
 
         </ReactMapGL>

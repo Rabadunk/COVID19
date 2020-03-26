@@ -34,8 +34,6 @@ for(let place in tempDict) {
     )
 }
 
-console.log(locations);
-
 function Info() {
 
     return (

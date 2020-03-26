@@ -1,13 +1,15 @@
 import firebase from 'firebase'
+
 const config = {
-    apiKey: "AIzaSyA4orDN93Xqovmv-I6K4Tj49zq32TdhZAo",
-    authDomain: "covid19-ac41c.firebaseapp.com",
-    databaseURL: "https://covid19-ac41c.firebaseio.com",
-    projectId: "covid19-ac41c",
-    storageBucket: "covid19-ac41c.appspot.com",
-    messagingSenderId: "333817426267",
-    appId: "1:333817426267:web:0c2109637f0c1b3ae76a7e",
-    measurementId: "G-0N9F3FCLTG"
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 firebase.initializeApp(config);
+
 export default firebase;
