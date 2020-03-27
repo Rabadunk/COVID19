@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './components/Title'
 import Map from './components/Map'
 import Info from './components/info/Info'
+import Summary from './components/summary/Summary'
 import Firebase from './Firebase'
 
 import StaticCases from './data/cases'
@@ -15,7 +16,8 @@ class App extends React.Component{
 
     this.state = {
       Locations: StaticLocations,
-      Cases: StaticCases
+      Cases: StaticCases,
+      Totals: {Confirmed: 0, Recovered: 0, Total: 0}
     }
 
   }
@@ -31,6 +33,12 @@ class App extends React.Component{
       this.setState({Cases: value.val()})
     })
 
+    const totalsRef = Firebase.database().ref("Totals");
+    totalsRef.once('value').then(value => {
+      this.setState({Totals: value.val()[0]})
+    })
+
+
   }
 
   render(){
@@ -42,6 +50,7 @@ class App extends React.Component{
         </div>
         <div className="Info">
           <Title />
+          <Summary totals={this.state.Totals}/>
           <Info cases={this.state.Cases} locations={this.state.Locations}/>
         </div>
       </div>

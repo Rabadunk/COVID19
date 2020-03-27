@@ -1,0 +1,41 @@
+.Summary {
+    width: 100%;
+    height: 180px;
+}
+
+
+.Totals {
+    float: left;
+    height: 70%;
+    width: 45%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.Profile {
+    float: right;
+    height: 70%;
+    width: 55%;
+    overflow: overlay;
+    text-align: left;
+}
+
+.Profile p {
+    font-size: 11px;
+}
+
+.Actions {
+    height: 30%;;
+    float: clear;
+    position: relative;
+}
+
+.Actions button{
+    width: 20%;
+    height: 20px;
+    font-size: 10px;
+    margin: 0 10px 0px 10px;
+    background-color: rgba(253, 219, 83, 0.8);
+    border-radius: 100px;
+    padding: 0px;
+}
