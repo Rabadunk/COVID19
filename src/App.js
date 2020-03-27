@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from './components/Title'
+import Title from './components/title/Title'
 import Map from './components/map/Map'
 import Info from './components/info/Info'
 import Summary from './components/summary/Summary'

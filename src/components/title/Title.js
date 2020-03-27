@@ -1,5 +1,6 @@
 import React from 'react'
-import TitleImage from '../img/Title.png';
+import TitleImage from '../../img/Title.png';
+import './Title.css'
 
 function Title () {
   return (
