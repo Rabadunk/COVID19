@@ -102,7 +102,7 @@ export default function Map({locations}) {
                                 <Button variant="warning" className="Case-Marker" 
                                 style={{width: `${dimension}px`, height: `${dimension}px`}}
                                 onClick={ () => {
-                                    const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 9);
+                                    const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 12);
                                     setViewport({
                                         ...viewport,
                                         latitude,
@@ -129,7 +129,7 @@ export default function Map({locations}) {
                                             ...viewport,
                                             latitude,
                                             longitude,
-                                            zoom: 9,
+                                            zoom: 12,
                                             transitionInterpolator: new FlyToInterpolator({
                                                 speed: 1
                                             }),
