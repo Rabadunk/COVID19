@@ -1,8 +1,11 @@
 import React, {useState, useRef} from "react";
 import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
+import './Map.css';
 
 
 import { MdZoomOutMap } from "react-icons/md";
+import { FaGithub, FaFileDownload} from "react-icons/fa";
+import { GoGraph } from "react-icons/go";
 import { Button } from "react-bootstrap";
 import useSupercluster from "use-supercluster";
 
@@ -73,12 +76,15 @@ export default function Map({locations}) {
         minZoom={4}
         ref={mapRef}>
 
-            <Button className="Zoom-Out" onClick={ () => {
-                setViewport(defaultView)}
-            }>
-                <MdZoomOutMap/>
-            
-            </Button>
+
+            <div className="Actions">
+
+                <Button variant="warning"><FaGithub/> github</Button>
+                <Button variant="warning"><FaFileDownload /> json</Button>
+                <Button variant="warning"><GoGraph /> graphs</Button>
+                <Button variant="warning" onClick={ () => { setViewport(defaultView)} }> <MdZoomOutMap/> re-center</Button>
+
+            </div>
 
             {
                 clusters.map(cluster => {

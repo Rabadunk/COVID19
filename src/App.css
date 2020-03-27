@@ -26,7 +26,7 @@
 }
 
 .Info-Profile {
-  height: 40%;
+  height: 25%;
 }
 
 .Info-Cards {
@@ -49,14 +49,6 @@
   top: 0;
   left: 0;
   will-change: transform;
-}
-
-.Zoom-Out {
-
-  background-color: #fddb53;
-  color: black;
-  border: snow;
-
 }
 
 @media only screen and (max-width: 919px) {

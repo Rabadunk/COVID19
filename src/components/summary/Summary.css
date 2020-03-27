@@ -32,21 +32,6 @@
     margin: 0px;
 }
 
-.Actions {
-    height: 30%;
-    width: 100%;
-    display: inline-block;
-}
-
-.Actions button{
-    width: 20%;
-    height: 20px;
-    font-size: 0.6em;
-    margin: 0px 10px 0px 10px;
-    background-color: rgba(253, 219, 83, 0.8);
-    border-radius: 100px;
-    padding: 0px;
-}
 
 @media only screen and (max-width: 400px) {
 

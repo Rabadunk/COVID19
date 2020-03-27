@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './components/Title'
-import Map from './components/Map'
+import Map from './components/map/Map'
 import Info from './components/info/Info'
 import Summary from './components/summary/Summary'
 import Firebase from './Firebase'
@@ -49,7 +49,7 @@ class App extends React.Component{
           <Map locations={this.state.Locations}/>
         </div>
         <div className="Info">
-          <div className="ugh">
+          <div className="Info-Profile">
             <Title />
             <Summary totals={this.state.Totals}/>
           </div>
