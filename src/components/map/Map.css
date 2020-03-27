@@ -14,3 +14,13 @@
     border-radius: 100px;
     padding: 0px;
 }
+
+.Actions a {
+    text-decoration: none;
+    color: black;
+}
+
+.Actions a:hover {
+    text-decoration: none;
+    color: black;
+}
