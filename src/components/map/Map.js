@@ -80,7 +80,7 @@ export default function Map({locations}) {
             <div className="Actions">
 
                 <a href="https://github.com/Rabadunk/COVID19"><Button variant="warning" ><FaGithub/> github</Button></a>
-                <a href="../../data/case.json" download><Button variant="warning"><FaFileDownload /> json</Button></a>
+                <a href="../../data/cases.json" download><Button variant="warning"><FaFileDownload /> json</Button></a>
                 <Button variant="warning"><GoGraph /> graphs</Button>
                 <Button variant="warning" onClick={ () => { setViewport(defaultView)} }> <MdZoomOutMap/> center</Button>
 

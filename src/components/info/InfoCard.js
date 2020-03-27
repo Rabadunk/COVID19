@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Card, Collapse, Button } from "react-bootstrap";
-import { FaTransgender, FaUserInjured } from "react-icons/fa";
-import { GiAges } from "react-icons/gi";
+import { FaUserInjured } from "react-icons/fa";
 import './InfoCard.css';
 
 let InfoCard = ({cases, location, total}) => {
