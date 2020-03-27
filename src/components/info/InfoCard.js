@@ -13,7 +13,6 @@ let InfoCard = ({cases, location, total}) => {
                 onClick={() => setOpen(!open)}
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
-
                 className="Location-Card"
             >
                 {location}
@@ -32,13 +31,8 @@ let InfoCard = ({cases, location, total}) => {
 
                             return (
                                 <div className="Piece-Of-Info">
+                                    <p>{info.Gender} {info.Gender === "Unavailable" ? "" : info.Age === "Child" ? info.Age : "in their " + info.Age } <Button variant="warning" className="Button-Wrappers"># {info.Case}</Button></p>
                                     <p className="Details">{info.Details}</p>
-                                    <div>
-                                        <Button variant="warning" className="Button-Wrappers"># {info.Case}</Button>
-                                        <Button variant="warning" className="Button-Wrappers"><FaTransgender/> {info.Gender}</Button>
-                                        <Button variant="warning" className="Button-Wrappers"><GiAges /> {info.Age}</Button>
-                                    </div>
-
                                 </div>
 
                             )
