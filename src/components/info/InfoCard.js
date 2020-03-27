@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import { Card, Collapse, Button } from "react-bootstrap";
-import { FaTransgender } from "react-icons/fa";
+import { FaTransgender, FaUserInjured } from "react-icons/fa";
 import { GiAges } from "react-icons/gi";
 import './InfoCard.css';
 
-let InfoCard = ({cases, location}) => {
+let InfoCard = ({cases, location, total}) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -17,6 +17,10 @@ let InfoCard = ({cases, location}) => {
                 className="Location-Card"
             >
                 {location}
+
+                <Button variant="warning" className="Case-Button">
+                    <FaUserInjured/> {total}
+                </Button>
 
             </Card>
             <Collapse in={open}>
