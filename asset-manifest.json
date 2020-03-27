@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/COVID19/static/css/main.8427e180.chunk.css",
-    "main.js": "/COVID19/static/js/main.2774b14e.chunk.js",
-    "main.js.map": "/COVID19/static/js/main.2774b14e.chunk.js.map",
+    "main.js": "/COVID19/static/js/main.bf441a33.chunk.js",
+    "main.js.map": "/COVID19/static/js/main.bf441a33.chunk.js.map",
     "runtime-main.js": "/COVID19/static/js/runtime-main.b6cf2ffe.js",
     "runtime-main.js.map": "/COVID19/static/js/runtime-main.b6cf2ffe.js.map",
     "static/css/2.de424728.chunk.css": "/COVID19/static/css/2.de424728.chunk.css",
-    "static/js/2.689787a8.chunk.js": "/COVID19/static/js/2.689787a8.chunk.js",
-    "static/js/2.689787a8.chunk.js.map": "/COVID19/static/js/2.689787a8.chunk.js.map",
+    "static/js/2.cfea44b9.chunk.js": "/COVID19/static/js/2.cfea44b9.chunk.js",
+    "static/js/2.cfea44b9.chunk.js.map": "/COVID19/static/js/2.cfea44b9.chunk.js.map",
     "index.html": "/COVID19/index.html",
-    "precache-manifest.299a57b2a494f8cd52f9f2caf59c03b2.js": "/COVID19/precache-manifest.299a57b2a494f8cd52f9f2caf59c03b2.js",
+    "precache-manifest.f797ec121e6a8032b6d34a2e967ecbe8.js": "/COVID19/precache-manifest.f797ec121e6a8032b6d34a2e967ecbe8.js",
     "service-worker.js": "/COVID19/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/COVID19/static/css/2.de424728.chunk.css.map",
     "static/css/main.8427e180.chunk.css.map": "/COVID19/static/css/main.8427e180.chunk.css.map",
-    "static/js/2.689787a8.chunk.js.LICENSE.txt": "/COVID19/static/js/2.689787a8.chunk.js.LICENSE.txt",
+    "static/js/2.cfea44b9.chunk.js.LICENSE.txt": "/COVID19/static/js/2.cfea44b9.chunk.js.LICENSE.txt",
     "static/media/Title.png": "/COVID19/static/media/Title.23336c2c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6cf2ffe.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.689787a8.chunk.js",
+    "static/js/2.cfea44b9.chunk.js",
     "static/css/main.8427e180.chunk.css",
-    "static/js/main.2774b14e.chunk.js"
+    "static/js/main.bf441a33.chunk.js"
   ]
 }
