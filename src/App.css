@@ -21,6 +21,8 @@
   float: left;
   width: 30%;
   height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .Info-Profile {
@@ -31,8 +33,6 @@
   margin: 0px;
   height: 500px;
   width: 100%;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 
 .Map {
@@ -72,16 +72,5 @@
     width: 100vw;
     height: 50vh;
     display: inline-block;
-  }
-
-  .ugh {
-    float: left;
-    width: 60%;
-  }
-
-  .Info-Cards {
-    float:right;
-    width: 40%;
-    height: 90%;
   }
 }

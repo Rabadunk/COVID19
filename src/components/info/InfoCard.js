@@ -4,7 +4,7 @@ import { FaTransgender } from "react-icons/fa";
 import { GiAges } from "react-icons/gi";
 import './InfoCard.css';
 
-let InfoCard = ({location, data}) => {
+let InfoCard = ({cases, location}) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -22,17 +22,25 @@ let InfoCard = ({location, data}) => {
             <Collapse in={open}>
                 <div id="example-collapse-text" className="Location-Info">
                 {
-                    data.map(info => (
-                        <div className="Piece-Of-Info">
-                            <p className="Details">{info.details}</p>
-                            <div>
-                                <Button variant="warning" className="Button-Wrappers"># {info.case}</Button>
-                                <Button variant="warning" className="Button-Wrappers"><FaTransgender/> {info.gender}</Button>
-                                <Button variant="warning" className="Button-Wrappers"><GiAges /> {info.age}</Button>
-                            </div>
+                    cases.map(info => {
 
-                        </div>
-                    ))
+                        if(info.DHB === location) {
+
+                            return (
+                                <div className="Piece-Of-Info">
+                                    <p className="Details">{info.Details}</p>
+                                    <div>
+                                        <Button variant="warning" className="Button-Wrappers"># {info.Case}</Button>
+                                        <Button variant="warning" className="Button-Wrappers"><FaTransgender/> {info.Gender}</Button>
+                                        <Button variant="warning" className="Button-Wrappers"><GiAges /> {info.Age}</Button>
+                                    </div>
+
+                                </div>
+
+                            )
+
+                        }
+                    })
                 }
                 </div>
             </Collapse>
