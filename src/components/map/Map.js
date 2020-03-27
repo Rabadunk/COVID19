@@ -51,7 +51,7 @@ export default function Map({locations}) {
         points,
         zoom: viewport.zoom,
         bounds,
-        options: { radius: 50, maxZoom: 12}
+        options: { radius: 30, maxZoom: 12}
     })
 
     // Method to get sum of clusters
@@ -82,7 +82,7 @@ export default function Map({locations}) {
                 <a href="https://github.com/Rabadunk/COVID19"><Button variant="warning" ><FaGithub/> github</Button></a>
                 <a href="../../data/case.json" download><Button variant="warning"><FaFileDownload /> json</Button></a>
                 <Button variant="warning"><GoGraph /> graphs</Button>
-                <Button variant="warning" onClick={ () => { setViewport(defaultView)} }> <MdZoomOutMap/> re-center</Button>
+                <Button variant="warning" onClick={ () => { setViewport(defaultView)} }> <MdZoomOutMap/> center</Button>
 
             </div>
 
@@ -95,7 +95,7 @@ export default function Map({locations}) {
                     if(isCluster) {
 
                         let sum = getClusterSum(cluster);
-                        let dimension = 50 + 5 * (sum / points.length)
+                        let dimension = 30 + 5 * (sum / points.length)
 
                         return(
                             <Marker key={cluster.id} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
@@ -118,7 +118,7 @@ export default function Map({locations}) {
                         );
                     }
 
-                    let dimension = 50 + 5 * (cluster.properties.count / points.length)
+                    let dimension = 30 + 2 **  (cluster.properties.count / points.length)
 
                     return(
                         <Marker key={cluster.properties.placeId} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
