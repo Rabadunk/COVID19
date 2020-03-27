@@ -18,9 +18,7 @@ function Summary ({totals}) {
         </div>
 
         <div className="Profile">
-            <p>This is not an official government website.</p>
-            <p>Data for this website is sourced from <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases">here</a>.</p>
-            <p>For more information view the official government website <a href="https://covid19.govt.nz/">here</a>.</p>
+            <p>This is not an official government website. Data for this website is sourced from <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-cases">here</a>. For more information view the official government website <a href="https://covid19.govt.nz/">here</a>.</p>
         </div>
 
         <div className="Actions">

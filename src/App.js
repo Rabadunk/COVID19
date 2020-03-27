@@ -49,8 +49,10 @@ class App extends React.Component{
           <Map locations={this.state.Locations}/>
         </div>
         <div className="Info">
-          <Title />
-          <Summary totals={this.state.Totals}/>
+          <div className="ugh">
+            <Title />
+            <Summary totals={this.state.Totals}/>
+          </div>
           <Info cases={this.state.Cases} locations={this.state.Locations}/>
         </div>
       </div>
