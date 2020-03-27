@@ -90,7 +90,7 @@ export default function Map({locations}) {
                 clusters.map(cluster => {
                     
                     const [longitude, latitude] = cluster.geometry.coordinates;
-                    const {cluster: isCluster, point_count: pointCount} = cluster.properties;
+                    const {cluster: isCluster} = cluster.properties;
 
                     if(isCluster) {
 
@@ -98,7 +98,7 @@ export default function Map({locations}) {
                         let dimension = 50 + 5 * (sum / points.length)
 
                         return(
-                            <Marker key={cluster.id} latitude={latitude} longitude={longitude}>
+                            <Marker key={cluster.id} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
                                 <Button variant="warning" className="Case-Marker" 
                                 style={{width: `${dimension}px`, height: `${dimension}px`}}
                                 onClick={ () => {
@@ -121,7 +121,7 @@ export default function Map({locations}) {
                     let dimension = 50 + 5 * (cluster.properties.count / points.length)
 
                     return(
-                        <Marker key={cluster.properties.placeId} latitude={latitude} longitude={longitude}>
+                        <Marker key={cluster.properties.placeId} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
                             <Button variant="warning" className="Case-Marker"
                                     style={{width: `${dimension}px`, height: `${dimension}px`}}
                                     onClick={ () => {
