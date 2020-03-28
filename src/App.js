@@ -17,7 +17,7 @@ class App extends React.Component{
     this.state = {
       Locations: StaticLocations,
       Cases: StaticCases,
-      Totals: {Confirmed: 0, Recovered: 0, Total: 0}
+      Totals: {Confirmed: 0, Recovered: 0, Total: 0, Probable: 0}
     }
 
   }
