@@ -1,12 +1,15 @@
 import React from 'react';
+import Rodal from 'rodal';
 import Title from './components/title/Title'
 import Map from './components/map/Map'
 import Info from './components/info/Info'
 import Summary from './components/summary/Summary'
+import Graphs from './components/graphs/Graphs'
 import Firebase from './Firebase'
 
 import StaticCases from './data/cases'
 import StaticLocations from './data/dhb'
+import 'rodal/lib/rodal.css';
 import './App.css';
 
 class App extends React.Component{
@@ -17,7 +20,8 @@ class App extends React.Component{
     this.state = {
       Locations: StaticLocations,
       Cases: StaticCases,
-      Totals: {Confirmed: 0, Recovered: 0, Total: 0, Probable: 0}
+      Totals: {Confirmed: 0, Recovered: 0, Total: 0, Probable: 0},
+      visible: false
     }
 
   }
@@ -41,12 +45,20 @@ class App extends React.Component{
 
   }
 
+  show() {
+    this.setState({ visible: true });
+  }
+
+  hide() {
+      this.setState({ visible: false });
+  }
+
   render(){
 
     return (
       <div className="App">
         <div className="Map">
-          <Map locations={this.state.Locations}/>
+          <Map locations={this.state.Locations} show={this.show.bind(this)}/>
         </div>
         <div className="Info">
           <div className="Info-Profile">
@@ -55,6 +67,13 @@ class App extends React.Component{
           </div>
           <Info cases={this.state.Cases} locations={this.state.Locations}/>
         </div>
+
+        <Rodal visible={this.state.visible} 
+        onClose={this.hide.bind(this)} 
+        animation="slideDown" duration={1000}
+        customMaskStyles={{backgroundColor:'blue'}}>
+          <div>sup</div>
+        </Rodal>
       </div>
     );
   }

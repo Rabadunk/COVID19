@@ -1,6 +1,5 @@
 import React from 'react'
 import CountUp from 'react-countup';
-import { FaHeart} from "react-icons/fa";
 
 
 import './Summary.css'
