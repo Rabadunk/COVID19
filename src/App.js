@@ -71,8 +71,11 @@ class App extends React.Component{
         <Rodal visible={this.state.visible} 
         onClose={this.hide.bind(this)} 
         animation="slideDown" duration={1000}
-        customMaskStyles={{backgroundColor:'blue'}}>
-          <div>sup</div>
+        customMaskStyles={{backgroundColor:'rgba(0, 0, 0, 0.6)'}}
+        width={70}
+        height={90}
+        measure="%">
+          <Graphs />
         </Rodal>
       </div>
     );

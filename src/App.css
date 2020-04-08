@@ -21,17 +21,30 @@
 }
 
 .Graphs {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 1000;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 100%;
 }
 
-.rodal-close {
-  color: yellow;
+.Tab {
+  height: 80vh;
+  max-height: 90%;
+  overflow-y: scroll;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgba(253, 219, 83, 0.8);
+}
+
+.rodal-close::before {
+  border-radius: 0px;
+}
+.rodal-close::after {
+  border-radius: 0px;
 }
 
 @media only screen and (max-width: 919px) {
