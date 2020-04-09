@@ -4,7 +4,7 @@ import Title from './components/title/Title'
 import Map from './components/map/Map'
 import Info from './components/info/Info'
 import Summary from './components/summary/Summary'
-import Graphs from './components/graphs/Graphs'
+import Stats from './components/graphs/Stats'
 import Firebase from './Firebase'
 
 import StaticCases from './data/cases'
@@ -80,7 +80,7 @@ class App extends React.Component{
         width={70}
         height={90}
         measure="%">
-          <Graphs locations={this.state.Locations}/>
+          <Stats locations={this.state.Locations} totals={this.state.Totals} dates={this.state.Dates}/>
         </Rodal>
       </div>
     );

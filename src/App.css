@@ -33,11 +33,11 @@
 }
 
 a {
-  color: black;
+  color: rgba(253, 219, 83, 1);
 }
 
 a:hover {
-  color: rgba(253, 219, 83, 0.8);
+  color: black;
 }
 
 .rodal-close::before {

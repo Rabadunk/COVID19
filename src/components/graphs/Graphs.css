@@ -1,0 +1,41 @@
+h1 {
+    width: 95%;
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+h1 span {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:orange;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+td {
+    padding-left: 4%;
+    width: 30%;
+    align-items: center;
+    padding: 10px;
+}
+
+td span {
+    padding: 3px 10px 3px 5px;
+    background-color: rgba(253, 219, 83, 1);
+    border-radius: 100px;
+}
+
+td span svg {
+    padding-bottom: 4px;
+}
+
+.Card {
+    margin: 10px auto;
+    padding: 30px;
+    width: 95%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
