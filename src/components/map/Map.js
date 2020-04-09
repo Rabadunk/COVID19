@@ -35,7 +35,7 @@ export default function Map({locations, show}) {
         properties: {
             cluser: false,
             placeId: place.DHB,
-            count: place['Total cases']
+            count: place.Total
         },
         geometry: {
             type: "Point",

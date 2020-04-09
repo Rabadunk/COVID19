@@ -7,7 +7,7 @@ function Info({cases, locations}) {
       <div className="Info-Cards">
           {
             locations.map(location => (
-                <InfoCard cases={cases} location={location.DHB} total={location["Total cases"]}/>
+                <InfoCard cases={cases} location={location.DHB} total={location.Total}/>
             ))
           }
       </div>
