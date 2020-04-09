@@ -30,8 +30,10 @@ let InfoCard = ({cases, location, total}) => {
 
                             return (
                                 <div className="Piece-Of-Info">
-                                    <p>{info.Sex} {info.Sex === "Unavailable" ? "" : "Aged " + info.Age } <Button variant="warning" className="Button-Wrappers"># {info.Case}</Button></p>
-                                    <p className="Details">{info.Details}</p>
+                                    <p>{info.Sex} {info.Sex === "Unavailable" ? "" : "aged " + info.Age } <Button variant="warning" className="Button-Wrappers"># {info.Case}</Button></p>
+                                    <p className="Details">{info["International travel"] == "Yes" ? 
+                                                            info["Last country before return"] == "N/A" ? "International transfer" : "Arrived to New Zealand from " + info["Last country before return"] : 
+                                                            info["International travel"] == "No" ? "Community transfer" : "Details unclear"}</p>
                                 </div>
 
                             )
