@@ -21,6 +21,7 @@ class App extends React.Component{
       Locations: StaticLocations,
       Cases: StaticCases,
       Totals: {Confirmed: 0, Recovered: 0, Total: 0, Probable: 0},
+      Dates: '',
       visible: false
     }
 
@@ -42,6 +43,10 @@ class App extends React.Component{
       this.setState({Totals: value.val()[0]})
     })
 
+    const datesRef = Firebase.database().ref("Dates");
+    datesRef.once('value').then(value => {
+      this.setState({Dates: value.val()})
+    })
 
   }
 
@@ -75,7 +80,7 @@ class App extends React.Component{
         width={70}
         height={90}
         measure="%">
-          <Graphs />
+          <Graphs locations={this.state.Locations}/>
         </Rodal>
       </div>
     );
