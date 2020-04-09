@@ -1,3 +1,31 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: snow; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #fddb53;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.Loading {
+  margin-top: 10%;
+  border-width: 50px;
+  height: 300px;
+  width: 300px;
+}
+
 .App {
   text-align: center;
   max-height: 100vh;
@@ -46,6 +74,7 @@ a:hover {
 .rodal-close::after {
   border-radius: 0px;
 }
+
 
 @media only screen and (max-width: 919px) {
 
