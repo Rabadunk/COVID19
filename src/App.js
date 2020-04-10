@@ -79,7 +79,7 @@ class App extends React.Component{
       animation="slideDown" duration={1000}
       customMaskStyles={{backgroundColor:'rgba(0, 0, 0, 0.6)'}}
       width={70}
-      height={90}
+      height={80}
       measure="%">
         <Stats locations={this.state.Locations} totals={this.state.Totals} dates={this.state.Dates}/>
       </Rodal> 

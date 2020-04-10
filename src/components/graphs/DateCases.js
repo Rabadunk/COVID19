@@ -1,11 +1,11 @@
 import React from 'react';
-import {HorizontalBar} from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
 import { Card } from 'react-bootstrap';
 
-let DateCases = ({locations}) => {
+let DateCases = ({dates}) => {
 
-  let labels = locations.map(place => {return place.DHB})
-  let data = locations.map(place => {return place.Total})
+  let labels = dates.map(date => {return date.Date})
+  let data = dates.map(date => {return date.Sum})
 
   console.log(labels, data);
 
@@ -23,19 +23,22 @@ let DateCases = ({locations}) => {
   let options = {
     title: {
       display: true,
-      text: 'Total cases per DHB'
+      text: 'Total cases when recorded'
     },
     legend: {
       display: false
     },
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: true
   }
 
 
   return (
     <div className="Stats">
-      <Card className="Card">
-          <HorizontalBar data={chartData} options={options}/>
+      <Card className="Card ChartCard">
+          <div className="Chart">
+            <Line data={chartData} options={options}/>
+          </div>
       </Card>
     </div>
   )

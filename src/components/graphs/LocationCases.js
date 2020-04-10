@@ -28,14 +28,17 @@ let LocationCases = ({locations}) => {
     legend: {
       display: false
     },
-    responsive: true
+    responsive: true,
+    maintainAspectRatio: true
   }
 
 
   return (
     <div className="Stats">
-      <Card className="Card">
-          <HorizontalBar data={chartData} options={options}/>
+      <Card className="Card ">
+          <div className="Chart">
+            <HorizontalBar data={chartData} options={options}/>
+          </div>
       </Card>
     </div>
   )

@@ -12,7 +12,7 @@ let Stats = ({locations, totals, dates}) => {
       <Tabs defaultActiveKey="stats" id="uncontrolled-tab-example">
         <Tab eventKey="stats" title="Stats" className="Tab">
           <StatsSummary totals={totals} />
-          <DateCases locations={locations} />
+          <DateCases dates={dates} />
           <LocationCases locations={locations}/>
         </Tab>
         <Tab eventKey="custom" title="Custom" disabled>
