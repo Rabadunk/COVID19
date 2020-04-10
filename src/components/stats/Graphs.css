@@ -39,7 +39,7 @@ td span svg {
 }
 
 .Card {
-    background-color: snow;
+    background-color: white;
     margin: 10px auto;
     padding: 5px;
     width: 95%;
@@ -50,6 +50,26 @@ td span svg {
 .Chart {
     width: 100%;
     height: auto;
+}
+
+.Custom .Card {
+    height: 70vh;
+    overflow-x: hidden;
+    margin-left: 0px;
+}
+
+.CardNav {
+    background-color: white;
+    margin: 10px auto;
+    padding: 5px;
+    overflow: hidden;
+    padding: 0px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.CustomColumn {
+    padding: 0px;
+    padding-left: 10px;
 }
 
 @media only screen and (max-width: 919px) {

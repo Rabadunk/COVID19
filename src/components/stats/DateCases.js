@@ -23,18 +23,18 @@ let DateCases = ({dates}) => {
   let options = {
     title: {
       display: true,
-      text: 'Total cases when recorded'
+      text: 'Total cases by date'
     },
     legend: {
       display: false
     },
     responsive: true,
-    maintainAspectRatio: true
+    maintainAspectRatio: true,
   }
 
 
   return (
-    <div className="Stats">
+    <div>
       <Card className="Card ChartCard">
           <div className="Chart">
             <Line data={chartData} options={options}/>

@@ -4,7 +4,7 @@ import Title from './components/title/Title'
 import Map from './components/map/Map'
 import Info from './components/info/Info'
 import Summary from './components/summary/Summary'
-import Stats from './components/graphs/Stats'
+import Stats from './components/stats/Stats'
 import Firebase from './Firebase'
 
 import 'rodal/lib/rodal.css';

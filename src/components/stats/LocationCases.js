@@ -34,7 +34,7 @@ let LocationCases = ({locations}) => {
 
 
   return (
-    <div className="Stats">
+    <div>
       <Card className="Card ">
           <div className="Chart">
             <HorizontalBar data={chartData} options={options}/>
