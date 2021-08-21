@@ -11,16 +11,21 @@ import useSupercluster from "use-supercluster";
 
 
 export default function Map({locations, show}) {
+    const boundaries = [
+        [153.23263188324853, -48.24568667774788],
+        [192.21550971326383, -33.99607772732675]
+    ]
+
     const defaultView = {
         latitude: -41.51128245580759,
         longitude: 172.72407079826075,
         width: '100vw',
         height: '100vh',
-        zoom: 4.418,
+        zoom: 5.2839,
         transitionInterpolator: new FlyToInterpolator({
             speed: 1
         }),
-        transitionDuration: "auto"     
+        transitionDuration: "auto",     
     }
 
     const [viewport, setViewport] = useState(defaultView);
@@ -45,6 +50,10 @@ export default function Map({locations, show}) {
 
     // Get map bounds
     const bounds= mapRef.current ? mapRef.current.getMap().getBounds().toArray().flat() : null;
+    const zoom= mapRef.current ? mapRef.current.getMap().getZoom() : null;
+
+
+    console.log(bounds, viewport.zoom);
 
     // Get clusters
     const {clusters, supercluster} = useSupercluster({
@@ -68,6 +77,8 @@ export default function Map({locations, show}) {
 
     }
 
+
+
     return (
     // Set a height on the map so it will display
         <ReactMapGL {...viewport} 
@@ -77,16 +88,6 @@ export default function Map({locations, show}) {
         maxZoom={12}
         minZoom={4}
         ref={mapRef}>
-
-
-            <div className="Actions">
-
-                <a href="https://github.com/Rabadunk/COVID19"><Button variant="warning" ><FaGithub/> github</Button></a>
-                <a href="./data/cases.json" download><Button variant="warning"><FaFileDownload /> json</Button></a>
-                <Button variant="warning" onClick ={() => show()}><GoGraph /> stats</Button>
-                <Button variant="warning" onClick={ () => { setViewport(defaultView)} }> <MdZoomOutMap/> center</Button>
-
-            </div>
 
             {
                 clusters.map(cluster => {

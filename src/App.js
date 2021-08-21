@@ -61,14 +61,14 @@ class App extends React.Component{
   render(){
     let oath = this.state.Locations != null ? this.state.Cases != null ? this.state.Totals != null ? this.state.Dates != null ? true : false : false : false : false;
     let display = oath ?
-    <FadeIn delay={300}>
+    <FadeIn  transitionDuration={1000}>
 
 
 
       <div className="Map">
 
         <Map locations={this.state.Locations} show={this.show.bind(this)}/>
-        
+
       </div>
 
     </FadeIn> : <Spinner animation="border" variant="warning" className="Loading" size="bg"/>
