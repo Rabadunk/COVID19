@@ -62,27 +62,15 @@ class App extends React.Component{
     let oath = this.state.Locations != null ? this.state.Cases != null ? this.state.Totals != null ? this.state.Dates != null ? true : false : false : false : false;
     let display = oath ?
     <FadeIn delay={300}>
+
+
+
       <div className="Map">
+
         <Map locations={this.state.Locations} show={this.show.bind(this)}/>
-      </div>
-      <div className="Info">
-        <div className="Info-Profile">
-          <Title />
-          <Summary totals={this.state.Totals}/>
-        </div>
-        <Info cases={this.state.Cases} locations={this.state.Locations}/>
+        
       </div>
 
-
-      <Rodal visible={this.state.visible} 
-      onClose={this.hide.bind(this)} 
-      animation="slideDown" duration={1000}
-      customMaskStyles={{backgroundColor:'rgba(0, 0, 0, 0.6)'}}
-      width={70}
-      height={80}
-      measure="%">
-        <Stats locations={this.state.Locations} totals={this.state.Totals} dates={this.state.Dates}/>
-      </Rodal> 
     </FadeIn> : <Spinner animation="border" variant="warning" className="Loading" size="bg"/>
 
     return (

@@ -14,8 +14,8 @@ export default function Map({locations, show}) {
     const defaultView = {
         latitude: -41.51128245580759,
         longitude: 172.72407079826075,
-        width: '100%',
-        height: '100%',
+        width: '100vw',
+        height: '100vh',
         zoom: 4.418,
         transitionInterpolator: new FlyToInterpolator({
             speed: 1

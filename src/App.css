@@ -10,7 +10,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:  #fddb53;
+  background:  rgba(253, 219, 83, 0.5);
   border-radius: 5px;
 }
 
@@ -30,12 +30,11 @@
   text-align: center;
   max-height: 100vh;
   min-height: 100vh;
-  background-color: white;
+  background-color: rgba(10, 10, 10, 0.9);
   overflow: hidden;
 }
 
 .Info {
-  float: left;
   width: 30%;
   height: 100vh;
   overflow: scroll;
@@ -43,9 +42,9 @@
 }
 
 .Map {
-  width: 70%;
+  width: 100vw;
   height: 100vh;
-  float:right;
+
 }
 
 .Stats {
