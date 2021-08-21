@@ -70,7 +70,9 @@ export default function Map({locations, show}) {
 
     return (
     // Set a height on the map so it will display
-        <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
+        <ReactMapGL {...viewport} 
+        mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
+        mapStyle={process.env.REACT_APP_MAP_STYLE}
         onViewportChange={ viewport => { setViewport(viewport)}}
         maxZoom={12}
         minZoom={4}
