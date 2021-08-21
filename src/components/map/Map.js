@@ -1,149 +1,37 @@
 import React, {useState, useRef} from "react";
-import ReactMapGL, { Marker, FlyToInterpolator } from "react-map-gl";
+import ReactMapGL, { Marker, FlyToInterpolator, NavigationControl } from "react-map-gl";
 import './Map.css';
 
+import keplerGlReducer from "kepler.gl/reducers";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { taskMiddleware } from "react-palm/tasks";
+import { Provider, useDispatch } from "react-redux";
+import KeplerGl from "kepler.gl";
+import { addDataToMap } from "kepler.gl/actions";
+import useSwr from "swr";
 
-import { MdZoomOutMap } from "react-icons/md";
-import { FaGithub, FaFileDownload} from "react-icons/fa";
-import { GoGraph } from "react-icons/go";
+
 import { Button } from "react-bootstrap";
 import useSupercluster from "use-supercluster";
 
 
 export default function Map({locations, show}) {
-    const boundaries = [
-        [153.23263188324853, -48.24568667774788],
-        [192.21550971326383, -33.99607772732675]
-    ]
 
-    const defaultView = {
-        latitude: -41.51128245580759,
-        longitude: 172.72407079826075,
-        width: '100vw',
-        height: '100vh',
-        zoom: 5.2839,
-        transitionInterpolator: new FlyToInterpolator({
-            speed: 1
-        }),
-        transitionDuration: "auto",     
-    }
+    const reducers = combineReducers({
+        keplerGl: keplerGlReducer
+    });
 
-    const [viewport, setViewport] = useState(defaultView);
-
-    const mapRef = useRef()
-
-
-    // Clustering
-    // Format for clusters
-    const points = locations.map( place => ({
-        type: "Feature",
-        properties: {
-            cluser: false,
-            placeId: place.DHB,
-            count: place.Total
-        },
-        geometry: {
-            type: "Point",
-            coordinates: [place.Longitude, place.Latitude]
-        }
-    }));
-
-    // Get map bounds
-    const bounds= mapRef.current ? mapRef.current.getMap().getBounds().toArray().flat() : null;
-    const zoom= mapRef.current ? mapRef.current.getMap().getZoom() : null;
-
-
-    console.log(bounds, viewport.zoom);
-
-    // Get clusters
-    const {clusters, supercluster} = useSupercluster({
-        points,
-        zoom: viewport.zoom,
-        bounds,
-        options: { radius: 30, maxZoom: 12}
-    })
-
-    // Method to get sum of clusters
-    const getClusterSum = (cluster) => {
-
-        let sum = 0;
-        
-        supercluster.getLeaves(cluster.id).forEach(point => {
-
-            sum += point.properties.count;
-        })
-
-        return sum;
-
-    }
-
-
+    const store = createStore(reducers, {}, applyMiddleware(taskMiddleware));
 
     return (
-    // Set a height on the map so it will display
-        <ReactMapGL {...viewport} 
-        mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
-        mapStyle={process.env.REACT_APP_MAP_STYLE}
-        onViewportChange={ viewport => { setViewport(viewport)}}
-        maxZoom={12}
-        minZoom={4}
-        ref={mapRef}>
+        <Provider store={store}>
+            <KeplerGl 
+            mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
+            width={window.innerWidth}
+            height={window.innerHeight}
+            >
 
-            {
-                clusters.map(cluster => {
-                    
-                    const [longitude, latitude] = cluster.geometry.coordinates;
-                    const {cluster: isCluster} = cluster.properties;
-
-                    if(isCluster) {
-
-                        let sum = getClusterSum(cluster);
-                        let dimension = 30 + (sum / points.length)
-
-                        return(
-                            <Marker key={cluster.id} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
-                                <Button variant="warning" className="Case-Marker" 
-                                style={{width: `${dimension}px`, height: `${dimension}px`}}
-                                onClick={ () => {
-                                    const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id), 12);
-                                    setViewport({
-                                        ...viewport,
-                                        latitude,
-                                        longitude,
-                                        zoom: expansionZoom,
-                                        transitionInterpolator: new FlyToInterpolator({
-                                            speed: 1
-                                        }),
-                                        transitionDuration: "auto"
-                                    })
-                                }}>{sum}</Button>
-                            </Marker>
-                        );
-                    }
-
-                    let dimension = 30 + 2 *  (cluster.properties.count / points.length)
-
-                    return(
-                        <Marker key={cluster.properties.placeId} latitude={latitude} longitude={longitude} offsetLeft={-1*dimension/2} offsetTop={-1*dimension/2}>
-                            <Button variant="warning" className="Case-Marker"
-                                    style={{width: `${dimension}px`, height: `${dimension}px`}}
-                                    onClick={ () => {
-                                        setViewport({
-                                            ...viewport,
-                                            latitude,
-                                            longitude,
-                                            zoom: 12,
-                                            transitionInterpolator: new FlyToInterpolator({
-                                                speed: 1
-                                            }),
-                                            transitionDuration: "auto"
-                                        })
-                                    }}>{cluster.properties.count}</Button>
-                        </Marker>
-                    )
-                })
-            }
-
-        </ReactMapGL>
+            </KeplerGl>
+        </Provider>
     );
 }
