@@ -25,13 +25,49 @@ export default function Map({locations, show}) {
 
     return (
         <Provider store={store}>
-            <KeplerGl 
-            mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
-            width={window.innerWidth}
-            height={window.innerHeight}
-            >
-
-            </KeplerGl>
+            <KeplerMap />
         </Provider>
     );
+}
+
+function KeplerMap() {
+    const dispatch = useDispatch();
+    const {data} = useSwr("cases", async () => {
+        const response = await fetch(
+            "https://gist.githubusercontent.com/Rabadunk/a9bb8282c50856d1168a41d82345d8c6/raw/cases.json"
+        );
+
+        const data = await response.json();
+        return data
+    });
+  
+
+    React.useEffect(() => {
+        if(data) {
+            dispatch(addDataToMap({
+                datasets: {
+                    info: {
+                        label: "Cases By DHB",
+                        id: "cases"
+                    },
+                    data
+                },
+            option: {
+                centerMap: true,
+                readOnly: false
+            },
+            config: {}
+            }))
+        }
+    }, [dispatch, data])
+
+    return (
+        <KeplerGl 
+        mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
+        width={window.innerWidth}
+        height={window.innerHeight}
+        >
+
+        </KeplerGl>
+    )
 }
