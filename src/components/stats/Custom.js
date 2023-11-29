@@ -2,7 +2,6 @@ import React from 'react';
 import './Graphs.css';
 import { Row, Col, Nav, Tab, Card} from "react-bootstrap";
 import BarChart from "./BarChart";
-import { Bar } from 'react-chartjs-2';
 
 let Custom = ({locations, totals, dates}) => {
 
